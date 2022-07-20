@@ -42,20 +42,20 @@ public class Main {
             System.out.println(titulo);
             System.out.println();
 
-//            System.out.println();
-//            System.out.println("\u001b[40;1m "+"\u001b[31mNome do filme: "+filme.get("title")+" \u001b[m");
-//            System.out.println("\u001b[40;1m "+"Ano do filme: "+filme.get("year")+" \u001b[m");
-//
-//            String rating = filme.get("imDbRating");
-//            System.out.println("\u001b[42m" +  "\u001b[30m Nota do filme: " + rating + "\u001b[m");
-//            String stars = "";
-//
-//            for (int i = 0; i < Math.round(Float.parseFloat(rating)); i++) {
-//                stars += "\u2B50";
-//
-//            }
-//            System.out.print(stars);
-//            System.out.println();
+            System.out.println();
+            System.out.println("\u001b[40;1m "+"\u001b[31mNome do filme: "+filme.get("title")+" \u001b[m");
+            System.out.println("\u001b[40;1m "+"Ano do filme: "+filme.get("year")+" \u001b[m");
+
+            String rating = filme.get("imDbRating");
+            System.out.println("\u001b[42m" +  "\u001b[30m Nota do filme: " + rating + "\u001b[m");
+            String stars = "";
+
+            for (int i = 0; i < Math.round(Float.parseFloat(rating)); i++) {
+                stars += "\u2B50";
+
+            }
+            System.out.print(stars);
+            System.out.println();
 
 
         }
