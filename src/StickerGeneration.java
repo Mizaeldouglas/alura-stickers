@@ -2,6 +2,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 
 public class StickerGeneration {
@@ -20,7 +21,7 @@ public class StickerGeneration {
 
         int largura = imagemOriginal.getWidth();
         int altura = imagemOriginal.getHeight();
-        int novaAltura = altura + 200;
+        int novaAltura = altura + 80;
         BufferedImage novaImagem = new BufferedImage(largura, novaAltura, BufferedImage.TRANSLUCENT);
 
         // copiar imagem original (em Memoria)
@@ -30,19 +31,21 @@ public class StickerGeneration {
 
         // config font
 
-        var fonte =new Font(Font.SANS_SERIF,Font.BOLD, 64);
+        var fonte =new Font(Font.SANS_SERIF,Font.BOLD, 15);
         graphics.setFont(fonte);
         graphics.setColor(Color.YELLOW);
 
 
         // Escrever uma frase na nova imagem
 
-        graphics.drawString("Mizaeldouglas",100,novaAltura - 100);
+        graphics.drawString("Mizaeldouglas",(int)(largura -(largura * 0.75)),(int) (novaAltura - (novaAltura * (0.15))));
 
 
         // Escrever a nova imagem em uma arquivo
 
-        ImageIO.write(novaImagem,"png",new File(nomeArquivo));
+        ImageIO.write(novaImagem,"png",new File("saida/"+nomeArquivo));
     }
+
+
 
 }
