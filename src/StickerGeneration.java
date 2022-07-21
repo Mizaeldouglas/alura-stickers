@@ -30,7 +30,7 @@ public class StickerGeneration {
 
         // config font
 
-        var fonte =new Font(Font.SANS_SERIF,Font.BOLD, 64);
+        var fonte =new Font(Font.SANS_SERIF,Font.BOLD, 30);
         graphics.setFont(fonte);
         graphics.setColor(Color.YELLOW);
 
@@ -42,7 +42,7 @@ public class StickerGeneration {
 
         // Escrever a nova imagem em uma arquivo
 
-        ImageIO.write(novaImagem,"png",new File(nomeArquivo));
+        ImageIO.write(novaImagem,"png",new File("saida/" + nomeArquivo));
     }
 
 }
