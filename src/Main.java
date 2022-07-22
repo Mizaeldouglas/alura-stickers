@@ -9,11 +9,16 @@ public class Main {
 
         // Fazer conexão HTTp e buscar os top 250 Filmes
 
-        String url = "https://alura-imdb-api.herokuapp.com/movies";
-        ExtratorDeConteudo extrator = new ExtratorConteudosIMDB();
+//        String url = "https://alura-imdb-api.herokuapp.com/movies";
+//        ExtratorDeConteudo extrator = new ExtratorConteudosIMDB();
 
 //        String url = "https://api.nasa.gov/planetary/apod?api_key=7Y6zfx5juOEC0S2gNVkdb6043NN6ON65P1oGFq20&start_date=2022-06-12&end_date=2022-06-14";
 //        ExtratorDeConteudo extrator = new ExtratorConteudosNasa();
+
+
+           String url = "http://localhost:8080/linguagens";
+           ExtratorDeConteudo extrator = new ExtratorConteudosIMDB();
+
 
 
         var http = new clientHttp();
